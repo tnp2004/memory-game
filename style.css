@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+* {
+    font-family: 'Didact Gothic', sans-serif;
+    margin: 0;
+    font-size: calc(60% + .8vmin);
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#d3cabd9c;
+    background-image: url(https://jolly-kalam-23776e.netlify.app/restaurantwebsite/assets/images/topography.svg)
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.829);
+    color: white;
+    padding: 10px;
+    max-width: 5rem;
+    margin: 1rem;
+}
+
+.game {
+    position: relative;
+    background-color: rgba(255, 217, 0, 0.226);
+    margin: 0 auto;
+    max-width: 40rem;
+    max-height: 60rem;
+    padding: 4rem 0;
+}
+
+.box {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-gap: 1rem;
+    align-items: center;
+    grid-template-columns: auto auto auto auto;
+}
+
+.card {
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    background-image: url('./image/backcard.jpg');
+    width: 7rem;
+    height: 8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .9;
+}
+
+.card:hover {
+    opacity: 1;
+}
+
+.card-img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.next-set {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+b {
+    margin: 0 5px;
+}
+
+.score {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 6rem;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 425px) { 
+    * {
+        font-size: calc(70% + .5vmin);
+    }
+
+    body {
+        background-color: rgba(255, 217, 0, 0.226);
+    }
+
+   .logo {
+       margin: 0%;
+       max-width: 100%;
+       padding: 5px;
+   }
+
+   .game {
+       max-width: 30rem;
+       padding: 3rem;
+   }
+
+   .box {
+       margin-top: 12px;
+       grid-gap: 3px;
+   }
+}
