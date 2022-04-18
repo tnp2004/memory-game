@@ -82,7 +82,7 @@ const openCard = (event) => {
                     same(arrCheck)
                     arrCheck = []
                     select2gem = 0
-                    collectGem.push(value1) /* ไว้บอกว่ากดไปกี่คู่ */
+                    collectGem.push(value1)
                     if (collectGem.length % 8 === 0) {
                         nextCardset.innerHTML = 'Press <b> enter </b> for next card set'
                         nextCardset.addEventListener('click', tabOrClickToNextCard)
